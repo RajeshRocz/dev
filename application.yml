@@ -1,0 +1,14 @@
+eureka:
+  client:
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultzone: http://localhost:8761/
+  instance:
+    hostname: localhost
+
+
+microservice:
+  paymentservice:
+     uri: http://PaymentService/payment/paymentBook
